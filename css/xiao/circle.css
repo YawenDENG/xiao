@@ -1,0 +1,43 @@
+.circle-percent { 
+	display: inline-block; 
+	position: relative; 
+	padding: 2em 0; 
+	width: 6em; 
+	height: 2em; 
+	line-height: 1;
+	text-align: center;
+}
+.circle-percent:before { 
+	position: relative; 
+	z-index: 3;  
+}
+.circle-percent:after, .circle-percent>div, .circle-percent>div:after { 
+	position: absolute; width: 50%; height: 100%; top: 0; left: 0; 
+}
+.circle-percent:after { 
+	content: ""; 
+	background: #fafafa url(../../img/xiao/bg_circle_2.png) no-repeat 0 0; background-size: auto 100%; 
+}
+.circle-percent>div { 
+	width: 100%; 
+}
+.circle-percent>div:first-child { 
+	z-index: 2; 
+}
+.circle-percent>div.bg { 
+	z-index: 3; 
+}
+.circle-percent>div:after { 
+	content: ""; 
+	background: url(../../img/xiao/bg_circle_1.png) no-repeat 0 0; background-size: auto 100%;
+}
+.circle-percent>div:first-child:after { 
+	left: auto; 
+	right: 0; 
+	background-position: 100% 0; 
+}
+.circle-percent>div.bg:after { 
+	content: ""; 
+	left: 0;
+	background: url(../../img/xiao/bg_circle_2.png) no-repeat 0 0; background-size: auto 100%;
+}
