@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-@picPath: "../../img/xiao/";
+$picPath: "../../img/xiao/";
 
 body {
 	margin: 0px;
@@ -58,24 +58,24 @@ body {
 
 	//关于环形进度条
 	// .circle {
-	// 	@diameter: 76px;
-	// 	@diametersmall:56px;
-	// 	width: @diameter;
-	// 	height: @diameter;
+	// 	$diameter: 76px;
+	// 	$diametersmall:56px;
+	// 	width: $diameter;
+	// 	height: $diameter;
 	// 	position: absolute;
 	// 	border-radius: 50%;
 	// 	background: #f1f1f1;
 	// 	text-indent: -9999px;
 
 	// 	.cut {
-	// 		width: @diameter;
-	// 		height: @diameter;
+	// 		width: $diameter;
+	// 		height: $diameter;
 	// 		position: absolute;
 	// 		top: 0;
 	// 		left: 0;
 	// 		.pie {
-	// 			width: @diameter;
-	// 			height: @diameter;
+	// 			width: $diameter;
+	// 			height: $diameter;
 	// 			background: #6a6a6a;
 	// 			border-radius: 50%;
 	// 			position: absolute;
@@ -111,8 +111,8 @@ body {
 	// 	}
 
 	// 	.mask{
-	// 		width: @diametersmall;
-	// 		height: @diametersmall;
+	// 		width: $diametersmall;
+	// 		height: $diametersmall;
 	// 		border-radius: 50%;
 	// 		position: absolute;
 	// 		top: 10px;
@@ -482,14 +482,14 @@ body {
 				text-align: center;
 
 				ul {
-					@width: 328px;
-					width: @width;
+					$width: 328px;
+					width: $width;
 					display: inline-block;
 					padding-right: 20px;
 
 					li {
 						float: left;
-						width: @width/4;
+						width: $width/4;
 						text-align: center;
 
 						p:nth-child(1) {
@@ -561,24 +561,24 @@ body {
 			color: #4e4e4e;
 
 			.circle {
-				@diameter: 310px;
-				width: @diameter;
-				height: @diameter;
-				border-radius: @diameter;
+				$diameter: 310px;
+				width: $diameter;
+				height: $diameter;
+				border-radius: $diameter;
 				border: 2px solid #a8a8a8;
 				margin: 0 auto;
 
 				font-size: 60px;
 				color: #333;
 				text-align: center;
-				line-height: @diameter;
+				line-height: $diameter;
 			}
 
 			.pan{
-				@diameter: 100px;
-				width: @diameter;
-				height: @diameter;
-				border-radius: @diameter/2;
+				$diameter: 100px;
+				width: $diameter;
+				height: $diameter;
+				border-radius: $diameter/2;
 				background-image: url(../../img/xiao/sec6-up-1.png);
 				background-repeat: no-repeat;
 				background-color: #a8a8a8;
@@ -588,29 +588,29 @@ body {
 
 				&.pan-1 {
 					background-position: 0 0;
-					margin-top: -@diameter/2;
-					margin-left:-@diameter/2;
+					margin-top: -$diameter/2;
+					margin-left:-$diameter/2;
 				}
 				&.pan-2 {
-					background-position: -@diameter 0;
+					background-position: -$diameter 0;
 					top: 100px;
 					margin-top: -40px;
 					margin-left:-195px;
 				}
 				&.pan-3 {
-					background-position: -@diameter*2 0;
+					background-position: -$diameter*2 0;
 					top: 100px;
 					margin-top: -40px;
 					margin-left:95px;
 				}
 				&.pan-4 {
-					background-position: -@diameter*3 0;
+					background-position: -$diameter*3 0;
 					top: 300px;
 					margin-top: -78px;
 					margin-left:-147px;
 				}
 				&.pan-5 {
-					background-position: -@diameter*4 0;
+					background-position: -$diameter*4 0;
 					top: 300px;
 					margin-top: -78px;
 					margin-left:47px;
@@ -711,17 +711,17 @@ body {
 		text-align: center;
 	}
 	ul {
-		@width: 480px;
-		@height: 320px;
-		width: @width;
-		height: @height;
+		$width: 480px;
+		$height: 320px;
+		width: $width;
+		height: $height;
 		margin: 0 auto;
 		margin-top: 90px;
 
 		li {
 			float: left;
-			width: @width/3;
-			height: @height/2;
+			width: $width/3;
+			height: $height/2;
 
 			.round {
 				width: 120px;
